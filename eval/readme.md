@@ -1,5 +1,5 @@
 ## eval
-Evaluation svChat, comparison with multiple mllms and GPT4o generation results 
+Evaluation SVChat, comparison with multiple mllms and GPT4o generation results 
 MLLMs include:
 * [llava1.5](https://github.com/haotian-liu/LLaVA)
 * [CogVlm2](https://github.com/THUDM/CogVLM2)
