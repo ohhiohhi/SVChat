@@ -1,4 +1,4 @@
-# Download the dataset for finetuning the SVbot and other tasks
+# Download the dataset for finetuning the SVChat and other tasks
 
 ## introduction
 Three types of datasets were created:
