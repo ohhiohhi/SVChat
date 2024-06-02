@@ -1,5 +1,5 @@
 ## eval
- our This about how we create datasets, and evaluate the generated results with GPT4o
+Evaluation svChat, comparison with multiple mllms and GPT4o generation results 
 MLLMs include:
 * [llava1.5](https://github.com/haotian-liu/LLaVA)
 * [CogVlm2](https://github.com/THUDM/CogVLM2)
