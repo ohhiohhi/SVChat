@@ -1,9 +1,6 @@
 """
 This is a demo for using CogVLM2 
-Make sure you have installed vicuna-7b-v1.5 tokenizer model (https://huggingface.co/lmsys/vicuna-7b-v1.5), full checkpoint of vicuna-7b-v1.5 LLM is not required.
-In this demo, We us chat template, you can use others to replace such as 'vqa'.
-Strongly suggest to use GPU with bfloat16 support, otherwise, it will be slow.
-Mention that only one picture can be processed at one conversation, which means you can not replace or insert another picture during the conversation.
+Make sure you have installed pretained model (https://huggingface.co/THUDM/cogvlm2-llama3-chat-19B)
 """
 import os
 import math
@@ -18,7 +15,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--quant", choices=[4, 8], type=int, default=0, help='Enable 4-bit or 8-bit precision loading')
-parser.add_argument("--from_pretrained", type=str, default="THUDM/cogagent-chat-hf", help='pretrained ckpt')
+parser.add_argument("--from_pretrained", type=str, default="THUDM/cogvlm2-llama3-chat-19B", help='pretrained ckpt')
 parser.add_argument("--image_folder", type=str, default="xxxxxx")
 parser.add_argument("--question_file", type=str, default="/xxxxxxxxxxxxx.jsonl")
 parser.add_argument("--answers_file", type=str, default="xxxxxxxxxxxxxxxxxxxxx.jsonl")
